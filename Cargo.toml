@@ -1,0 +1,22 @@
+[package]
+name = "rust_auth_api"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+actix-web = "4.0"
+diesel = { version = "2.0", features = ["r2d2", "postgres"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+bcrypt = "0.15.1"
+dotenv = "0.15"
+validator = "0.18.1"
+reqwest = { version = "0.12.8", features = ["json"] }
+chrono = { version = "0.4", features = ["serde"] }
+
+
+
+[dev-dependencies]
+actix-rt = "2.5"
+
